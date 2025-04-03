@@ -1,0 +1,125 @@
+{
+  "bloqueio": {
+    "portas_tcp": [
+      135,
+      137,
+      139,
+      445,
+      1433,
+      23,
+      21,
+      8080
+    ],
+    "portas_udp": [
+      137,
+      138,
+      445,
+      1433,
+      21
+    ],
+    "dominios_bloqueados": [
+      "www.bet365.com",
+      "www.sportingbet.com",
+      "torrentz2.pages.dev",
+      "www.torproject.org",
+      "www.tiktok.com",
+      "www.instagram.com",
+      "www.facebook.com",
+      "www.pornhub.com",
+      "www.xvideos.com",
+      "pt-br.facebook.com",
+      "pt.pornhub.com"
+    ]
+  },
+  "excecoes": {
+    "portas_tcp": [
+      {
+        "porta": 80,
+        "protocolo": "TCP",
+        "direcao": "outbound",
+        "tipo": "geral"
+      },
+      {
+        "porta": 443,
+        "protocolo": "TCP",
+        "direcao": "outbound",
+        "tipo": "geral"
+      },
+      {
+        "porta": 53,
+        "protocolo": "TCP",
+        "direcao": "outbound",
+        "tipo": "geral"
+      },
+      {
+        "porta": 25,
+        "protocolo": "TCP",
+        "direcao": "outbound",
+        "tipo": "geral"
+      },
+      {
+        "porta": 110,
+        "protocolo": "TCP",
+        "direcao": "outbound",
+        "tipo": "geral"
+      },
+      {
+        "porta": 143,
+        "protocolo": "TCP",
+        "direcao": "outbound",
+        "tipo": "geral"
+      },
+      {
+        "porta": 3389,
+        "protocolo": "TCP",
+        "direcao": "inbound",
+        "tipo": "geral"
+      }
+    ],
+    "portas_udp": [
+      {
+        "porta": 53,
+        "protocolo": "UDP",
+        "direcao": "outbound",
+        "tipo": "geral"
+      },
+      {
+        "porta": 123,
+        "protocolo": "UDP",
+        "direcao": "outbound",
+        "tipo": "geral"
+      },
+      {
+        "porta": 3389,
+        "protocolo": "UDP",
+        "direcao": "inbound",
+        "tipo": "geral"
+      }
+    ],
+    "dominios_permitidos": [
+      "www.google.com.br",
+      "www.google.com",
+      "www.outlook.com",
+      "teams.microsoft.com",
+      "workspace.google.com",
+      "www.zoom.com",
+      "accounts.google.com",
+      "www.microsoft.com",
+      "github.com",
+      "stackoverflow.com",
+      "www.adobe.com",
+      "www.zendesk.com.br",
+      "www.bancobrasil.com.br",
+      "www.itau.com.br",
+      "www.sap.com"
+    ]
+  },
+  "logs": {
+    "caminho_logs_local": "C:\\ControlAegis\\Logs",
+    "caminho_logs_ad": "\\\\servidor_ad\\logs",
+    "ativar_logs_ad": false,
+    "log_rotation_strategy": "size",
+    "log_rotation_size": 100,
+    "log_rotation_max_files": 10
+  }
+}
